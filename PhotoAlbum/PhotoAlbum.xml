@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PhotoAlbum</name>
+    </assembly>
+    <members>
+        <member name="T:PhotoAlbum.Controllers.ItemController">
+            <summary>
+            Controller to work with items
+            </summary>
+        </member>
+        <member name="M:PhotoAlbum.Controllers.ItemController.#ctor(BLL.Interfaces.IItemService)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="itemService"></param>
+        </member>
+        <member name="M:PhotoAlbum.Controllers.ItemController.Get">
+            <summary>
+            Return all items
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PhotoAlbum.Controllers.ItemController.GetByName(System.String)">
+            <summary>
+            Return all items by name
+            </summary>
+            <param name="name">Name to search</param>
+            <returns></returns>
+        </member>
+        <member name="M:PhotoAlbum.Controllers.ItemController.Add(BLL.DTO.ItemDTO)">
+            <summary>
+            Add new item
+            </summary>
+            <param name="item">Item object</param>
+            <returns></returns>
+        </member>
+        <member name="M:PhotoAlbum.Controllers.ItemController.SaveFile">
+            <summary>
+            Save image to the project folder
+            </summary>
+            <returns>Path to saved image</returns>
+        </member>
+        <member name="M:PhotoAlbum.Controllers.ItemController.AddRate(BLL.DTO.ItemDTO)">
+            <summary>
+            Increment rate of the object by 1
+            </summary>
+            <param name="item">Item object</param>
+            <returns></returns>
+        </member>
+        <member name="M:PhotoAlbum.Controllers.ItemController.DeleteItem(System.Int32)">
+            <summary>
+            Delete item from collection
+            </summary>
+            <param name="id">Item id</param>
+            <returns></returns>
+        </member>
+        <member name="T:PhotoAlbum.Controllers.UserController">
+            <summary>
+            Controller to work with users
+            </summary>
+        </member>
+        <member name="M:PhotoAlbum.Controllers.UserController.#ctor(BLL.Interfaces.IUserService)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="userService"></param>
+        </member>
+        <member name="M:PhotoAlbum.Controllers.UserController.Get">
+            <summary>
+            Show list of all users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PhotoAlbum.Controllers.UserController.Register(BLL.DTO.UserDTO)">
+            <summary>
+            Add new user
+            </summary>
+            <param name="userDTO">User to add</param>
+            <returns></returns>
+        </member>
+        <member name="M:PhotoAlbum.Controllers.UserController.Login(BLL.DTO.UserDTO)">
+            <summary>
+            Log in to the system
+            </summary>
+            <param name="userDTO">User object</param>
+            <returns></returns>
+        </member>
+        <member name="M:PhotoAlbum.Controllers.UserController.Update(BLL.DTO.UserDTO)">
+            <summary>
+            Update user
+            </summary>
+            <param name="userDTO">User to update</param>
+            <returns></returns>
+        </member>
+        <member name="M:PhotoAlbum.Controllers.UserController.Delete(System.Int32)">
+            <summary>
+            Delete user
+            </summary>
+            <param name="id">User to delete</param>
+            <returns></returns>
+        </member>
+        <member name="T:PhotoAlbum.MappingProfile">
+            <summary>
+            Use for mapping models and DTOs
+            </summary>
+        </member>
+        <member name="M:PhotoAlbum.MappingProfile.#ctor">
+            <summary>
+            Constructor, that mapps models and DTOs
+            </summary>
+        </member>
+        <member name="T:PhotoAlbum.Startup">
+            <summary>
+            Works when application is started
+            </summary>
+        </member>
+        <member name="M:PhotoAlbum.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:PhotoAlbum.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:PhotoAlbum.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>
